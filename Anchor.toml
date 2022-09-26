@@ -1,0 +1,19 @@
+[programs.localnet]
+cowtwitter = "D6GtdktU111ZBUT1XJE9R6XGmdnR6ZJTgua9SE5XhEPs"
+
+[programs.devnet]
+cowtwitter = "D6GtdktU111ZBUT1XJE9R6XGmdnR6ZJTgua9SE5XhEPs"
+
+[programs.mainnet]
+cowtwitter = "D6GtdktU111ZBUT1XJE9R6XGmdnR6ZJTgua9SE5XhEPs"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/alessandrobuffoli/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+copy-idl = "mkdir -p app/src/idl && cp target/idl/cowtwitter.json app/src/idl/cowtwitter.json"
