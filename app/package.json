@@ -19,6 +19,7 @@
     "autoprefixer": "^10.4.0",
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
+    "cowsigner": "^1.0.8",
     "dayjs": "^1.10.7",
     "postcss": "^8.4.1",
     "solana-wallets-vue": "^0.3.2",
