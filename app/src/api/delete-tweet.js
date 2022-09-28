@@ -11,6 +11,7 @@ export const deleteTweet = async (tweet) => {
     let method = program.value.methods.deleteTweet({
         accounts: {
             author: wallet.value.publicKey,
+            payer: appWallet, // <---- Add this line here
             tweet: tweet.publicKey
         }
     })

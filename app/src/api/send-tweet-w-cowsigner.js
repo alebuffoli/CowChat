@@ -15,6 +15,7 @@ export const sendTweetWCowsigner = async (topic, content) => {
         accounts: {
             author: wallet.value.publicKey,
             tweet: tweet.publicKey,
+            payer: appWallet, // <---- Add this line here
             systemProgram: web3.SystemProgram.programId,
         },
         signers: [tweet]
